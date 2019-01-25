@@ -47,3 +47,15 @@ function rmflash()
 	rm -rf "~/Library/Preferences/Macromedia/Flash Player/macromedia.com/support/flashplayer/sys/"*
 	echo 'Flash Cookies Removed.'
 }
+
+parse_git_branch() {
+	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+## Show git branch in terminal
+export PS1="\u@\h \[\033[32m\]\w - \$(parse_git_branch)\[\033[00m\] $ "
+
+## Load secret exported env vars
+source ~/.bash_secrets
+
+
