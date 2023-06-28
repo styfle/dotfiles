@@ -4,8 +4,8 @@ let g:solarized_termcolors=256
 "let g:solarized_visibility="high"
 "let g:solarized_contrast="high"
 colorscheme solarized			" located in ~/.vim/colors/solarized.vim
-set tabstop=4                   " 4 spaces per tab
-set shiftwidth=4                " shift 4 spaces on tab
+set tabstop=2                   " 2 spaces per tab
+set shiftwidth=2                " shift 2 spaces on tab
 set autoindent                  " auto indent new line
 set smartindent                 " smart indent
 
@@ -44,3 +44,11 @@ if has("gui_running")
 	set antialias                       " Smooth fonts.
 	set guioptions=egmrt                " Tabs, grey menu items, menu bar, right scrollbar, tearoff menu items
 endif
+
+" LIGHT MODE VS DARK MODE
+"let iterm_profile = $ITERM_PROFILE
+"if iterm_profile == "Default Dark"
+"    set background=dark
+"else
+"    set background=light
+"endif
