@@ -92,3 +92,6 @@ export GEM_HOME="$HOME/.gem"
 
 source "$HOME/.cargo/env"
 . "$HOME/.cargo/env"
+
+# Added by Hades
+export PATH="$PATH:$HOME/.hades/bin"

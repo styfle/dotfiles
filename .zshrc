@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=/opt/homebrew/opt/mysql-client/bin:$HOME/.luarocks/bin:$PATH
+export PATH=/opt/homebrew/opt/mysql-client/bin:$HOME/.luarocks/bin:$HOME/.hades/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/styfle/.oh-my-zsh"
@@ -69,11 +69,13 @@ DISABLE_MAGIC_FUNCTIONS=true
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	zsh-autosuggestions
   git
   z
 )
 
 source $ZSH/oh-my-zsh.sh
+source /Users/styfle/iterm2_shell_integration.zsh
 
 # User configuration
 
